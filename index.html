@@ -4,78 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aditya Jabade</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh;
+            background-color: #f7f4f2;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #577c38;
+            color: white;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+        }
+        .content {
+            max-width: 45%;
+            text-align: left;
+        }
+        .content h1 {
+            font-size: 28px;
+            margin: 0 0 10px;
+        }
+        .content p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+        .image-container img {
+            max-width: 200px;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            font-size: 14px;
+        }
+    </style>
 </head>
-<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6;">
+<body>
     <!-- Header -->
-    <header style="background-color: #f4f4f4; text-align: center; padding: 20px;">
+    <header>
         <h1>Aditya Jabade</h1>
-        <p><a href="mailto:aj3324@columbia.edu">aj3324@columbia.edu</a> | <a href="https://linkedin.com/in/adityaj" target="_blank">LinkedIn</a></p>
     </header>
 
-    <!-- About Me -->
-    <section style="padding: 20px; text-align: center;">
-        <h2>About Me</h2>
-        <p>
-            I am a graduate student pursuing a Master’s in Applied Mathematics at Columbia University, with a passion for leveraging mathematics and technology to solve real-world challenges. 
-            My experience spans algorithm development, image processing, and computational modeling. 
-        </p>
-        <img src="AdityaJ.jpeg" alt="Aditya Jabade" style="width: 200px; border-radius: 10px; margin-top: 20px;">
-    </section>
-
-    <!-- Education -->
-    <section style="padding: 20px;">
-        <h2>Education</h2>
-        <ul>
-            <li>
-                <strong>Columbia University</strong> (Aug 2024 - Dec 2025)<br>
-                M.S. Applied Mathematics, GPA: 4.0/4.0<br>
-                Coursework: Digital Signal Processing, Medical Signal Modeling, Deep Learning in Biomedical Imaging, Computational Math, Optimization Models
-            </li>
-            <li style="margin-top: 10px;">
-                <strong>Birla Institute of Technology & Science Pilani</strong> (Aug 2018 - May 2022)<br>
-                B.E. Electronics & Instrumentation Engineering, GPA: 8.84/10<br>
-                Coursework: Control Theory, Image Processing, Math Modeling, Nonlinear Dynamics
-            </li>
-        </ul>
-    </section>
-
-    <!-- Work Experience -->
-    <section style="padding: 20px;">
-        <h2>Work Experience</h2>
-        <ul>
-            <li>
-                <strong>Oneirix Labs</strong> (Jun 2022 - Jun 2024)<br>
-                Associate Engineer<br>
-                - Led a team to develop an optical-flow-based image-registration algorithm, achieving 96% overlay accuracy.<br>
-                - Built an image processing framework for blood cell segmentation, improving runtime efficiency by 2x.<br>
-                - Enhanced lithotripsy device performance using optimization techniques.<br>
-            </li>
-            <li style="margin-top: 10px;">
-                <strong>Hiroshima University</strong> (Aug 2021 - Dec 2021)<br>
-                Research Intern<br>
-                - Designed a data-driven PID controller for a nonlinear liquid-level control system.<br>
-                - Conducted a literature survey on data-driven PID controllers.<br>
-            </li>
-            <li style="margin-top: 10px;">
-                <strong>CEERI Pilani</strong> (May 2020 - Jun 2020)<br>
-                Research Intern<br>
-                - Modeled and optimized a Brushless DC motor for electric tricycles using MATLAB.<br>
-            </li>
-        </ul>
-    </section>
-
-    <!-- Resume -->
-    <section style="padding: 20px; text-align: center;">
-        <h2>Resume</h2>
-        <p>
-            You can download my resume using the link below:<br>
-            <a href="Jabade_Aditya_Resume.pdf" target="_blank" style="color: white; background-color: #007BFF; padding: 10px 20px; text-decoration: none; border-radius: 5px;">View My Resume</a>
-        </p>
-    </section>
+    <!-- Main Content -->
+    <main>
+        <!-- About Section -->
+        <div class="content">
+            <h1>About Me</h1>
+            <p>Graduate student at Columbia University specializing in applied mathematics and technology-driven solutions.</p>
+            <p>Explore my journey and work!</p>
+        </div>
+        <!-- Image Section -->
+        <div class="image-container">
+            <img src="AdityaJ.jpeg" style="width: 700px" alt="Aditya Jabade">
+        </div>
+    </main>
 
     <!-- Footer -->
-    <footer style="background-color: #f4f4f4; text-align: center; padding: 10px;">
-        <p>&copy; 2025 Aditya Jabade. All Rights Reserved.</p>
+    <footer>
+        <p>View my <a href="Jabade_Aditya_Resume.pdf" style="color: #FFD700; text-decoration: none;">Resume</a> | © 2025 Aditya Jabade</p>
     </footer>
 </body>
 </html>
