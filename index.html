@@ -4,58 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aditya Jabade</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            height: 100vh;
-            background-color: #f7f4f2;
-            color: #333;
-        }
-        header {
-            text-align: center;
-            padding: 10px;
-            background-color: #577c38;
-            color: white;
-        }
-        main {
-            flex: 1;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
-            padding: 10px;
-        }
-        .content {
-            max-width: 45%;
-            text-align: left;
-        }
-        .content h1 {
-            font-size: 28px;
-            margin: 0 0 10px;
-        }
-        .content p {
-            font-size: 14px;
-            margin: 5px 0;
-        }
-        .image-container img {
-            max-width: 200px;
-            border-radius: 10px;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #333;
-            color: white;
-            font-size: 14px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="misc.html">Misc</a></li>
+        </ul>
+    </nav>
+
     <!-- Header -->
     <header>
         <h1>Aditya Jabade</h1>
@@ -63,21 +23,30 @@
 
     <!-- Main Content -->
     <main>
-        <!-- About Section -->
-        <div class="content">
-            <h1>About Me</h1>
-            <p>Graduate student at Columbia University specializing in applied mathematics and technology-driven solutions.</p>
-            <p>Explore my journey and work!</p>
-        </div>
-        <!-- Image Section -->
-        <div class="image-container">
-            <img src="AdityaJ.jpeg" style="width: 700px" alt="Aditya Jabade">
+        <div class="homepage-container">
+            <!-- Image Section -->
+            <div class="image-container">
+                <img src="AdityaJ.jpeg" alt="Aditya Jabade">
+                <section class="buttons">
+                    <a href="Jabade_Aditya_Resume.pdf" class="button" download>Resume</a>
+                    <a href="https://linkedin.com/in/adityajabade" class="button" target="_blank">LinkedIn</a>
+                    <a href="mailto:adityajabade@example.com" class="button">Email</a>
+                    <a href="https://github.com/adityajabade" class="button" target="_blank">GitHub</a>
+                </section>
+            </div>
+
+            <!-- About Me Section -->
+            <div class="about">
+                <h2>About Me</h2>
+                <p>Graduate student at Columbia University specializing in applied mathematics and technology-driven solutions.</p>
+                <p>Explore my journey and work!</p>
+            </div>
         </div>
     </main>
 
     <!-- Footer -->
     <footer>
-        <p>View my <a href="Jabade_Aditya_Resume.pdf" style="color: #FFD700; text-decoration: none;">Resume</a> | © 2025 Aditya Jabade</p>
+        <p>© 2025 Aditya Jabade</p>
     </footer>
 </body>
 </html>
